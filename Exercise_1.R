@@ -41,7 +41,7 @@ plot <- ggplot(data=dna_results2.2,mapping = aes(x=species_name,
                                                  fill=species_name)) +
         geom_col() +
         geom_errorbar(aes(ymin=mean_yield - sd_yield, ymax= mean_yield + sd_yield), width=0.5) +
-        scale_fill_brewer(palette = "Set1") +
+        scale_fill_brewer(palette = "PiYG") +
         theme_classic() +
         theme(plot.title=element_text(hjust=0.5,
                                       face="bold",
